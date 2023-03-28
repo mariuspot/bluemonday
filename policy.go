@@ -36,7 +36,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/mariuspot/bluemonday/css"
+	"github.com/microcosm-cc/bluemonday/css"
 )
 
 // Policy encapsulates the allowlist of HTML elements and attributes that will
