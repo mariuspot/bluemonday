@@ -55,7 +55,7 @@ func TestEmpty(t *testing.T) {
 }
 
 func TestSignatureBehaviour(t *testing.T) {
-	// https://github.com/microcosm-cc/bluemonday/issues/8
+	// https://github.com/mariuspot/bluemonday/issues/8
 	p := UGCPolicy()
 
 	input := "Hi.\n"
@@ -1605,7 +1605,7 @@ func TestComments(t *testing.T) {
 		// Note that prior to go1.19 this test worked and preserved HTML comments
 		// of the style used by Microsoft to create browser specific sections.
 		//
-		// However as @zhsj notes https://github.com/microcosm-cc/bluemonday/pull/148
+		// However as @zhsj notes https://github.com/mariuspot/bluemonday/pull/148
 		// the commit https://github.com/golang/net/commit/06994584 broke this.
 		//
 		// I haven't found a way to allow MS style comments without creating a risk
@@ -3276,7 +3276,7 @@ func TestInsertionModeSanitization(t *testing.T) {
 }
 
 func TestIssue3(t *testing.T) {
-	// https://github.com/microcosm-cc/bluemonday/issues/3
+	// https://github.com/mariuspot/bluemonday/issues/3
 
 	p := UGCPolicy()
 	p.AllowStyling()
@@ -3859,7 +3859,7 @@ func TestIssue143(t *testing.T) {
 }
 
 func TestIssue146(t *testing.T) {
-	// https://github.com/microcosm-cc/bluemonday/issues/146
+	// https://github.com/mariuspot/bluemonday/issues/146
 	//
 	// Ask for image/svg+xml to be accepted.
 	// This blog https://digi.ninja/blog/svg_xss.php shows that inline images
@@ -3882,7 +3882,7 @@ func TestIssue146(t *testing.T) {
 }
 
 func TestIssue147(t *testing.T) {
-	// https://github.com/microcosm-cc/bluemonday/issues/147
+	// https://github.com/mariuspot/bluemonday/issues/147
 	//
 	// ```
 	// p.AllowElementsMatching(regexp.MustCompile(`^custom-`))
@@ -3933,7 +3933,7 @@ func TestRemovingEmptySelfClosingTag(t *testing.T) {
 }
 
 func TestIssue161(t *testing.T) {
-	// https://github.com/microcosm-cc/bluemonday/issues/161
+	// https://github.com/mariuspot/bluemonday/issues/161
 	//
 	// ```
 	// p.AllowElementsMatching(regexp.MustCompile(`^custom-`))
