@@ -34,7 +34,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/microcosm-cc/bluemonday"
+	"github.com/mariuspot/bluemonday"
 )
 
 func Example() {
