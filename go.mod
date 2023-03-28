@@ -10,3 +10,5 @@ require (
 require github.com/gorilla/css v1.0.0 // indirect
 
 retract [v1.0.0, v1.0.22] // Retract older versions as only latest is to be depended upon
+
+replace github.com/microcosm-cc/bluemonday => github.com/mariuspot/bluemonday v1.1.0
